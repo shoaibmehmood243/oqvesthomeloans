@@ -1,0 +1,218 @@
+.container {
+    width: 70%;
+    margin: 100px auto;
+}
+
+.container2 {
+    width: 100%;
+    margin: 0;
+}
+
+.container h1 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 72px;
+    color: #404F66;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-bottom: 100px;
+}
+
+.container2 .card {
+    height: 280px;
+}
+
+.card {
+    background: #FFFFFF;
+    box-shadow: 0px -4.13292px 47.2334px rgba(0, 0, 0, 0.07), 0px -1.72664px 19.733px rgba(0, 0, 0, 0.0503198), 0px -0.923142px 10.5502px rgba(0, 0, 0, 0.0417275), 0px -0.517506px 5.91435px rgba(0, 0, 0, 0.035), 0px -0.274844px 3.14107px rgba(0, 0, 0, 0.0282725), 0px -0.114369px 1.30707px rgba(0, 0, 0, 0.0196802);
+    border-radius: 12px;
+    padding: 10px 10px 20px 10px;
+    width: 300px;
+    height: 375px;
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blogImage {
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.blogImage2 {
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.card .span1 span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #818AA6;
+}
+
+.card h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #222D39;
+}
+
+.container2 h3 {
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+
+    color: #222D39 !important;
+}
+
+.widgets {
+    font-size: 15px;
+    line-height: 17px;
+}
+
+.heart {
+    cursor: pointer;
+    color: #FF5959;
+}
+
+.msg {
+    cursor: pointer;
+    color: #4B88E6;
+    ;
+}
+
+.readMore {
+    cursor: pointer;
+    color: #0CBC8B;
+}
+
+.btn p {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid rgba(70, 86, 111, 0.56);
+    padding: 10px 0;
+}
+
+.btn svg {
+    color: #FF6C59;
+}
+
+.slider :global(.slick-prev),
+.slider :global(.slick-next) {
+    background-color: transparent;
+    color: #222D39 !important;
+    font-size: 24px !important;
+    z-index: 1;
+}
+
+.slider :global(.slick-next) {
+    right: 20px;
+}
+.slider :global(.slick-prev) {
+    left: 15px;
+}
+
+.slider :global(.slick-prev::before),
+.slider :global(.slick-next::before) {
+    content: '';
+}
+
+.slider a {
+    text-decoration: none;
+}
+
+.slider .text {
+    color: #818AA6;
+    margin: 8px 0px;
+}
+
+.slider :global(.slick-track) {
+    height: 450px;
+    top: 50px;
+    position: relative;
+}
+.slider2 :global(.slick-prev),
+.slider2 :global(.slick-next) {
+    background-color: transparent;
+    color: #222D39 !important;
+    font-size: 24px !important;
+}
+
+.slider2 :global(.slick-next) {
+    right: 0px;
+}
+.slider2 :global(.slick-prev) {
+    left: -10px;
+}
+
+.slider2 :global(.slick-prev::before),
+.slider2 :global(.slick-next::before) {
+    content: '';
+}
+
+.slider2 a {
+    text-decoration: none;
+}
+
+.slider2 .text {
+    color: #818AA6;
+    margin: 8px 0px;
+}
+
+.slider2 :global(.slick-track) {
+    height: 450px;
+    top: 50px;
+    position: relative;
+}
+
+@media screen and (min-width: 1400px) {
+    .container {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .container {
+        width: 100%;
+        margin: 5px 0px 40px 0px;
+    }
+
+    .container h1 {
+        font-size: 24px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        margin: 0 10px;
+        display: none;
+    }
+}
